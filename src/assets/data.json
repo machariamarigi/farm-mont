@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "type": "Residential",
+    "price": 750000,
+    "location": "South C, Nairobi",
+    "shortDescription": "Flat, close to the city",
+    "longDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolor laudantium quaerat, earum quisquam quasi autem soluta accusantium, illo voluptates in, explicabo commodi quam ducimus harum provident! Iusto, ratione, dolorum!",
+    "area": 921,
+    "image":"plot1",
+    "owner": {
+      "name": "John Doe",
+      "contact": "0700000000"
+    }  
+  },
+  {
+    "id": 2,
+    "type": "Commercial",
+    "price": 10000000,
+    "location": "Kilimani, Nairobi",
+    "shortDescription": "Flat, close to the city",
+    "longDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolor laudantium quaerat, earum quisquam quasi autem soluta accusantium, illo voluptates in, explicabo commodi quam ducimus harum provident! Iusto, ratione, dolorum!",
+    "area": 921,
+    "image":"plot2",
+    "owner": {
+      "name": "John Doe",
+      "contact": "0700000000"
+    }  
+  },
+  {
+    "id": 3,
+    "type": "Agricultural",
+    "price": 3000000,
+    "location": "Kimbo, Kiambu",
+    "shortDescription": "Flat, close to the city",
+    "longDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolor laudantium quaerat, earum quisquam quasi autem soluta accusantium, illo voluptates in, explicabo commodi quam ducimus harum provident! Iusto, ratione, dolorum!",
+    "area": 921,
+    "image":"plot3",
+    "owner": {
+      "name": "John Doe",
+      "contact": "0700000000"
+    }  
+  },
+  {
+    "id": 4,
+    "type": "Commercial",
+    "price": 3200000,
+    "location": "Parklands, Nairobi",
+    "shortDescription": "Flat, close to the city",
+    "longDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolor laudantium quaerat, earum quisquam quasi autem soluta accusantium, illo voluptates in, explicabo commodi quam ducimus harum provident! Iusto, ratione, dolorum!",
+    "area": 921,
+    "image":"plot4",
+    "owner": {
+      "name": "John Doe",
+      "contact": "0700000000"
+    }  
+  },
+  {
+    "id": 5,
+    "type": "Commercial",
+    "price": 10000000,
+    "location": "South B, Nairobi",
+    "shortDescription": "Flat, close to the city",
+    "longDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolor laudantium quaerat, earum quisquam quasi autem soluta accusantium, illo voluptates in, explicabo commodi quam ducimus harum provident! Iusto, ratione, dolorum!",
+    "area": 921,
+    "image":"plot5",
+    "owner": {
+      "name": "John Doe",
+      "contact": "0700000000"
+    }  
+  },
+  {
+    "id": 6,
+    "type": "Commercial",
+    "price": 500000,
+    "location": "Ruai, Nairobi",
+    "shortDescription": "Flat, close to the city",
+    "longDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolor laudantium quaerat, earum quisquam quasi autem soluta accusantium, illo voluptates in, explicabo commodi quam ducimus harum provident! Iusto, ratione, dolorum!",
+    "area": 921,
+    "image":"plot6",
+    "owner": {
+      "name": "John Doe",
+      "contact": "0700000000"
+    }  
+  },
+  {
+    "id": 7,
+    "type": "Residential",
+    "price": 560000,
+    "location": "Zimmerman, Nairobi",
+    "shortDescription": "Flat, close to the city",
+    "longDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolor laudantium quaerat, earum quisquam quasi autem soluta accusantium, illo voluptates in, explicabo commodi quam ducimus harum provident! Iusto, ratione, dolorum!",
+    "area": 921,
+    "image":"plot7",
+    "owner": {
+      "name": "John Doe",
+      "contact": "0700000000"
+    }  
+  },
+  {
+    "id": 8,
+    "type": "Agricultural",
+    "price": 1000000,
+    "location": "South B, Nairobi",
+    "shortDescription": "Flat, close to the city",
+    "longDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolor laudantium quaerat, earum quisquam quasi autem soluta accusantium, illo voluptates in, explicabo commodi quam ducimus harum provident! Iusto, ratione, dolorum!",
+    "area": 921,
+    "image":"plot8",
+    "owner": {
+      "name": "John Doe",
+      "contact": "0700000000"
+    }  
+  }
+]

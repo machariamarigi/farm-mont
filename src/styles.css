@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+
+.about {
+  background-color: #66A266;
+  color: #006400;
+  height: 600px;
+  text-align: center;
+  margin-top: -20px;
+}
+.about h2 {
+  padding-top: 220px;
+}
+.about p {
+  padding: 20px 80px;
+}
