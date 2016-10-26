@@ -10,7 +10,7 @@
   </div>
 
   <div id="products" class="row list-group">
-    <div class="item col-xs-4 col-lg-4" *ngFor="let plot of plots">
+    <div class="item col-xs-4 col-lg-4" *ngFor="let plot of plots | paginate: { itemsPerPage: 7, currentPage: p }">
       <div class="thumbnail">
         <img class="group list-group-image" src="assets/images/{{plot.image}}.jpg" alt="" />
         <div class="caption">
@@ -31,3 +31,5 @@
     </div>
   </div>
 </div>
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
