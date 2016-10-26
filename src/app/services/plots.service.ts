@@ -19,10 +19,10 @@ export class PlotsService {
       .catch(this.handleError);
   }
 
-getPlot(id: number): Observable<Plot>{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    return this.getPlots()
-      .map((plots: Plot[]) => plots.find(l => l.id === id))
-      .catch(this.handleError);
+getPlot(id: number): Observable<Plot>{
+  return this.getPlots()
+    .map((plots: Plot[]) => plots.find(l => l.id === id))
+    .catch(this.handleError);
   }
 
   private handleError(error: Response){
@@ -31,3 +31,4 @@ getPlot(id: number): Observable<Plot>{
   }
 
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
