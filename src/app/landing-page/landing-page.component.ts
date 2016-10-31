@@ -11,7 +11,7 @@ import { PlotsService } from '../services/plots.service';
 export class LandingPageComponent implements OnInit {
   plots: Plot[];
   errorMessage: string;
-
+  
   constructor(
     private plotService: PlotsService
   ) { }

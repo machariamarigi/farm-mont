@@ -11,6 +11,7 @@ import { PlotsService } from '../services/plots.service';
 export class PlotsComponent implements OnInit {
   plots: Plot[];
   errorMessage: string;
+  plotsFilter: string;
 
   constructor(
     private plotService: PlotsService

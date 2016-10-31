@@ -1,17 +1,4 @@
-
-
-
-
-.about {
-  background-color: #66A266;
-  color: #006400;
-  height: 600px;
-  text-align: center;
-  margin-top: -20px;
-}
-.about h2 {
-  padding-top: 220px;
-}
-.about p {
-  padding: 20px 80px;
+p{
+  color: #000 !important;
+  font-size: 12 !important;
 }

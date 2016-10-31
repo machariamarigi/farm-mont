@@ -1,48 +1,9 @@
-.splash{
+
+.searchless-splash{
   padding-top: -20px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
   text-align: center;
   color: #f8f8f8;
-  background: url(http://sonorangirl.github.io/Earth-Quotes/img/google-earth-view-South-Iceland3.jpg);
-  background-size: cover;
-}
-
-.splash-message{
-  position: relative;
-  padding-top: 15%;
-  padding-bottom: 5%
-}
-
-.splash-search {
-    padding-top: 20px;
-}
-
-.splash-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
-
-.splash-buttons{
-  padding-top: 15px;
-}
-
-@media(max-width:767px) {
-    .splash-message {
-+        padding-bottom: 15%;
-    }
-
-    .splash-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.splash-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.splash-buttons > li:last-child {
-        margin-bottom: 0;
-    }
+  background: url(assets/images/splash.jpg);
+  background-size: cover;   
 }

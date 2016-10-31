@@ -1,6 +1,6 @@
 .navbar {
   height: 80px;
-  background-color: transparent;
+  background-color: rgba(92, 184, 92, 0.5);
   border: none;
   color: white;
   z-index: 100;
@@ -36,19 +36,19 @@
   border-color: #006400;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #7CFC00;
+  background-color: #5cb85c;
 }
 .navbar-default .navbar-toggle .icon-bar {
   color: #006400;
   background-color: #006400;
 }
 .navbar-default .navbar-collapse.collapse.in ul {
-  background-color: #7CFC00;
+  background-color: #5cb85c;
 }
 
 /* Solid class attached on scroll past first section */
 .navbar.solid {
-  background-color: #7CFC00;
+  background-color: #5cb85c;
   -webkit-transition: background-color 1s ease 0s;
   transition: background-color 1s ease 0s;
   box-shadow: 0 0 4px grey;
@@ -66,7 +66,7 @@
 
 .about {
   background-color: #006400;
-  color: #7CFC00;
+  color: #5cb85c;
   height: 600px;
   text-align: center;
   margin-top: -20px;

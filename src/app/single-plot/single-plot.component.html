@@ -1,3 +1,42 @@
-<p>
-  single-plot works!
-</p>
+<app-searchless-splash></app-searchless-splash>
+<div class="container content">
+  <div class="row">
+    <div class="col-md-4 col-xs-12">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="item col-md-8 col-xs-12" *ngIf="plot">
+      <div class="thumbnail">
+        <img src="assets/images/{{plot.image}}.jpg" alt="" class="group list-group-image">
+        <div class="caption">
+          <div class="well">
+            <h4 class="group text-center">Plot {{plot.id}}</h4>
+            <hr>
+            <blockquote>
+              {{plot.longDescription}}
+            </blockquote>
+            <div class="row text-center">
+              <div class="col-md-6">
+                <p><strong>Price: </strong>KSh. {{plot.price}}</p>
+                <p><strong>Type: </strong>{{plot.type}}</p>
+                <p><strong>{{plot.owner.name}}</strong></p>
+              </div>
+              <div class="col-md-6">
+                <p><strong>Location: {{plot.location}}</strong></p>
+                <p><strong>Plot Area: </strong> {{plot.area}} sqM</p>
+                <p><strong>Contact</strong> {{plot.owner.contact}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-6 text-center">
+              <a href="" class="btn btn-success btn-large">Contact Me</a>
+            </div>
+            <div class="col-xs-12 col-md-6 text-center right">
+              <a href="" class="btn btn-success">Back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

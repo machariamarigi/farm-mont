@@ -1,0 +1,23 @@
+.bottom-rule {
+  border-bottom: 1px solid lightgray;
+}
+
+footer {
+  padding-top: 20px;
+  border-top: 10px solid #006400;
+  background-color: white;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+}

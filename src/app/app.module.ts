@@ -11,10 +11,13 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SinglePlotComponent } from './single-plot/single-plot.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SplashComponent } from './splash/splash.component';
 import { PlotsComponent } from './plots/plots.component';
 
 import { PlotsService } from './services/plots.service';
+import { FooterComponent } from './footer/footer.component';
+import { SearchPipe } from './plots/search.pipe';
+import { SearchlessSplashComponent } from './splash/searchless-splash.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +26,11 @@ import { PlotsService } from './services/plots.service';
     AboutUsComponent,
     SinglePlotComponent,
     NavbarComponent,
-    SplashComponent,
-    PlotsComponent
+    PlotsComponent,
+    FooterComponent,
+    SearchPipe,
+    SearchlessSplashComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-splash',
-  templateUrl: './splash.component.html',
+  selector: 'app-searchless-splash',
+  templateUrl: './searchless-splash.component.html',
   styleUrls: ['./splash.component.css']
 })
-export class SplashComponent implements OnInit {
+export class SearchlessSplashComponent implements OnInit {
 
   constructor() { }
 

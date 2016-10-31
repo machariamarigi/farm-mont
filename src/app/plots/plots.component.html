@@ -1,29 +1,12 @@
-<div class="container">
-  <div class="well well-sm">
-    <strong>Display</strong>
-    <div class="btn-group">
-      <a href="#" id="list" class="btn btn-default btn-sm">
-        <span class="glyphicon glyphicon-th-list"></span>List</a>
-      <a href="#" id="grid" class="btn btn-default btn-sm">
-        <span class="glyphicon glyphicon-th"></span>Grid</a>
-    </div>
-  </div>
-
-  <div id="products" class="row list-group">
-    <div class="item col-xs-4 col-lg-4" *ngFor="let plot of plots | paginate: { itemsPerPage: 7, currentPage: p }">
-      <div class="thumbnail">
-        <img class="group list-group-image" src="assets/images/{{plot.image}}.jpg" alt="" />
-        <div class="caption">
-          <h4 class="group inner list-group-item-heading">Plot {{plot.id}}</h4>
-          <p class="group inner list-group-item-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vel, obcaecati autem tenetur consequatur totam beatae sequi, incidunt saepe iure, praesentium corporis tempore! Esse quis reiciendis commodi. Porro, iure, minima!
-          </p>
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <p class="lead">Ksh. {{plot.price}}</p>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <a class="btn btn-success" href="#">More Details</a>
+<div class="splash">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="splash-message">
+          <div class="input-group col-xs-6 col-xs-offset-3 splash-search">
+            <input class="form-control" placeholder="Search for plots" name="srch-term" id="srch-term" type="text" [(ngModel)]="plotsFilter">
+            <div class="input-group-btn">
+              <button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-search"></i></button>
             </div>
           </div>
         </div>
@@ -31,5 +14,44 @@
     </div>
   </div>
 </div>
-
-<pagination-controls (pageChange)="p = $event"></pagination-controls>
+<div class="container">
+  <div class="row content">
+    <div class="col-md-4">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-8">
+      <div class="well well-sm">
+        <strong>Display</strong>
+        <div class="btn-group">
+          <a href="#" id="list" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-th-list"></span>List</a>
+          <a href="#" id="grid" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-th"></span>Grid</a>
+        </div>
+      </div>
+      <div id="products" class="row list-group">
+        <div class="item col-xs-12 col-lg-6" *ngFor="let plot of plots | paginate: { itemsPerPage: 6, currentPage: p } | search: plotsFilter">
+          <div class="thumbnail">
+            <img class="group list-group-image" src="assets/images/{{plot.image}}.jpg" alt="" [routerLink]="['/plot', plot.id]" />
+            <div class="caption">
+              <h4 class="group inner list-group-item-heading">Plot {{plot.id}}</h4>
+              <p class="group inner list-group-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vel, obcaecati autem tenetur consequatur totam beatae sequi,
+                incidunt saepe iure, praesentium corporis tempore! Esse quis reiciendis commodi. Porro, iure, minima!
+              </p>
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <p class="lead">Ksh. {{plot.price}}</p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <a class="btn btn-success" [routerLink]="['/plot', plot.id]">More Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+  </div>
+</div>
